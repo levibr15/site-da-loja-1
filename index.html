@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Dia dos Namorados ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffb6c1, #ffe4e1);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-top: 20vh;
+      text-shadow: 2px 2px 4px #d63d59;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin: 1em auto;
+      max-width: 700px;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      background: #ff3366;
+      border: none;
+      color: white;
+      font-size: 1.2em;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      margin: 40px auto;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      transform: rotate(45deg);
+      animation: float 10s linear infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes float {
+      0% {
+        top: 100vh;
+        left: calc(100vw * var(--i));
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      100% {
+        top: -10vh;
+        transform: rotate(45deg) translateY(-200px);
+        opacity: 0;
+      }
+    }
+
+    .final-message {
+      margin-top: 80px;
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #fff0f5;
+      text-shadow: 2px 2px 5px #c2185b;
+      padding-bottom: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Feliz Dia dos Namorados! 💖</h1>
+  <p>
+    Meu amor, você não sabe o quanto eu te amo. Nessa vida não quero passar nem um segundo longe de você. <br><br>
+    Quero te agradecer por me apoiar em tudo e estar sempre do meu lado. Sei o quão difícil é ficar comigo às vezes, com minhas tristezas a todo momento e choros fora de hora... <br><br>
+    Cada momento que passo com você é um aprendizado imenso, tanto de como quero te tratar quanto de decorar todos os seus tiques quando você está bravinha. <br><br>
+    E olha... eu amo quando você coloca a lingua entre os dentes quando tá com raiva e cruza os braços me olhando com cara de quem me odeia 😂 <br><br>
+    Te amo, minha baixinha, e quero passar o resto da minha vida com você. ❤️
+  </p>
+
+  <a href="https://www.youtube.com/watch?v=bGF1UP936TI" target="_blank" class="btn">
+    Essa é a musica que te dedicarei todos os anos 🎵
+  </a>
+
+<a href="file:///C:/Users/Levi%20Gabriel/AppData/Local/Temp/Rar$EXa7940.8454.rartemp/site_com_fotos/index.html" target="_blank" class="btn">
+    Amo todos os momentos com você <3
+  </a>
+
+
+  <div class="final-message">
+    💖💖💖 BEIJOS DO SEU LATREL 💖💖💖
+  </div>
+
+  <script>
+    for (let i = 0; i < 30; i++) {
+      let heart = document.createElement("div");
+      heart.className = "heart";
+      heart.style.setProperty('--i', Math.random());
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = 5 + Math.random() * 5 + "s";
+      document.body.appendChild(heart);
+    }
+  </script>
+</body>
+</html>
